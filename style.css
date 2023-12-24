@@ -1,0 +1,403 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #000000; /* Dark background color */
+    color: #fff; /* Text color */
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+
+.header-section-wrapper {
+    background: url('./Assets/common-background.jpg') center center /cover no-repeat; /* Add background image to wrapper */
+    mask-image: linear-gradient(rgba(0,0,0,1) 54%, rgba(0,0,0,0) 110%);
+  mask-position: 20% 90%;
+  overflow: hidden;
+  
+}
+header {
+    padding: 10px 0px 10px 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(160, 158, 158, 0.959); /* Fallback color in case the image doesn't load */
+    color: black;
+    height: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.logo-title {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 0.8rem;
+}
+.logo-title img {
+    max-height: 40px; /* Set the max height for the logo */
+    margin-right: 10px; /* Add some margin for spacing */
+    border-right: 1px solid black;
+    padding-right: 2px;
+}
+nav{
+    margin-right: 15%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 0.7rem;
+    gap: 15%;
+}
+nav li {
+    margin-right: 15px;
+    
+}
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+section.section1 {
+    max-width: 800px;
+    margin-left: 11%;
+    padding-top: 120px;
+    padding-bottom: 15%;
+
+}
+section.section1 h2 {
+    margin-bottom: 0; /* Remove margin-bottom for h2 */
+}
+section.section1 p {
+    margin-top: 0; /* Remove margin-top for p */
+}
+button {
+    display: block;
+    margin-top: 10px;
+    padding: 0.5% 3% 0.5% 3%;
+}
+.image_title {
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 7%;
+}
+
+section.section2 p {
+    text-align: center; /* Center the text within the paragraph */
+    width: 50%; /* Set the width of the paragraph */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    margin-top: -3%;
+}
+section.section2 img {
+    max-width: 10%; /* Set the maximum width for images to 50% */
+    height: auto;
+    display: block; /* Center the image within its container */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.section3 {
+    display: flex;
+    justify-content:center;
+    gap: 5%;
+    margin: 0;
+}
+.image-conatianer {
+    display: inline;
+
+    font-size: 12px;
+
+}
+
+.image-conatianer > img{
+    mask-image: linear-gradient(rgba(0,0,0,1) 56%, rgba(0,0,0,0) 100%);
+    mask-position: 20% 90%;
+    transform: skew(-20deg);
+    height: 300px;
+    width: 200px;
+}
+.image-conatianer > p{
+    margin-top: -55px;
+    right:20%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+
+
+}
+
+.section4 {
+    display: grid;
+    grid-template-columns: repeat(3, 2%);
+
+    justify-content:center;
+    justify-items: center;
+    align-items: center;
+    gap: 20%;
+    padding-top: 10%;
+    align-items: flex-start;
+    
+
+}
+.section_container {
+    height: 20%;
+    text-align: center;
+
+
+}
+
+
+
+#icon__border {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    padding-left: 60px ;
+    padding-right:60px ;
+}
+.icon_container {
+    text-align: center;
+}
+
+
+.icon_container img {
+    filter: invert(100%);
+    height: 125px;
+    width: auto;
+}
+
+
+.icon_container h5 {
+    margin: 0;
+}
+.icon_container  p {
+        margin: 0;
+        font-size: 12px;
+    }
+
+
+.section5{
+    padding-top: 5%;
+    margin-bottom: 15%;
+}
+
+.banner-box {
+    background-image: url('./Assets/Middel\ image.jpg');
+
+    background-size: 100% 100%;
+    position: relative;
+    /* transform: skewY(6deg); */
+    margin: 50px 0;
+    background-attachment: fixed;
+    clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 70%);
+    padding: 100px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0;
+
+    
+}
+
+hr {
+    border-top: 1px solid white;
+    border-style:inset;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.3); /* Change the color as needed */
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.section7  {
+    margin-top: 20%;
+    background: url('./Assets/Footer\ image.jpg') center center /cover no-repeat; /* Add background image to wrapper */
+    mask-image: linear-gradient(rgba(0,0,0,1) 88%, rgba(0,0,0,0) 110%);
+  mask-position: 20% 90%;
+  border-bottom: 0;
+  overflow-y: hidden;
+}
+.contact_container {
+
+    display: flex;
+    max-width: 90%;
+    position: relative;
+    margin-left: 5%;
+}
+.contact_content {
+    max-width: 40%;
+    border-right: 1px solid rgba(236, 233, 228, 0.699);
+    padding: 5%;
+
+}
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 100%;
+}
+
+.form_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; /* Make sure the content takes full width */
+}
+
+.contact_form input {
+    padding: 10px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 50%;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.contact_form textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    height: 150px;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.form_button {
+
+}
+
+.contact_form button {
+    align-self:flex-end; /* Align the button to the right */
+    margin-top: 5px; /* Add some top margin for spacing */
+    padding: 2% 10% 2% 10%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(187, 187, 183);
+    margin-right: -20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    color: white;
+}
+
+
+@media (max-width: 1100px)  {
+    #icon__border {
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        padding-left: 30px ;
+        padding-right:30px ;
+    }
+}
+@media (max-width: 920px)  {
+    #icon__border {
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        padding-left: 15px ;
+        padding-right:15px ;
+    }
+}
+@media (max-width: 768px) {
+    .logo-title {
+        margin-left: 5%; /* Adjust the margin for smaller screens */
+        font-size: 0.6rem;
+    }
+
+    nav {
+        margin-right: 5%;
+    }
+    nav ul {
+        gap: 5%;
+        font-size: 0.5rem;
+    }
+
+    .section1 {
+        margin-left: 5%;
+        padding-top: 80px;
+        padding-bottom: 10%;
+    }
+
+    .section2 img {
+        max-width: 80%;
+
+    }
+    .section2 p {
+        font-size: 0.8rem;
+    }
+
+    .section3 {
+        flex-wrap: wrap;
+
+    }
+    .section4,
+    .section5 {
+        grid-template-columns: repeat(1, 100%);
+        gap: 5%;
+    }
+    .section5 {
+        margin-top: 10%;
+    }
+    #icon__border {
+        border: 0;
+    }
+
+    .banner-box {
+        background-size: cover;
+        padding: 50px 0;
+        clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
+    }
+
+    .section7 {
+        margin-top: 10%;
+        font-size: 12px;
+    }
+
+    .contact_container {
+        padding: 0 5%;
+    }
+
+    .contact_form {
+    
+        margin-top: 5%;
+    }
+    .contact_form input{
+        font-size: 10px;
+
+    }
+    .contact_form textarea {
+        height: 120px;
+        width: 100%;
+        font-size: 10px;
+
+    }
+}
+
+@media (max-width: 560px) {
+    .logo-title {
+        margin-left: 2%;
+    }
+
+    nav {
+        margin-right: 2%;
+    }
+
+    .section1 {
+        margin-left: 2%;
+        padding-top: 60px;
+        padding-bottom: 5%;
+    }
+}
+
+
+
